@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #16143a;
+    overflow: hidden;
+}
+
+#head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: #201E43;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.links a{
+    margin-left: 35px;
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    transition: .05s;
+    font-family: "Poppins";
+}
+
+.links a:hover,
+.links a.active {
+    color: #508C9B;
+}
+
+.main {
+    color:aliceblue;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    width: 100%;
+}
+
+.home-content h3 {
+    font-family: "Poppins";
+    color: #508C9B;
+    font-size: 28px;
+}
+
+#silent_text ._inside {
+    font-size: 56px;
+    font-weight: 700;
+    font-family: "Poppins";
+    position: relative;
+    color: white;
+}
+
+#silent_text ._inside:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #16143a;
+    border-left: 2px solid #508C9B;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.logo {
+    width: 100vh;
+    position:flex;
+    justify-content: end;
+    z-index: 100;
+    scale: 50%;
+}
