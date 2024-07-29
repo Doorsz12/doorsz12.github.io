@@ -189,6 +189,9 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
+    .home {
+        overflow: hidden;
+    }
     .get_disabled {
         display: none;
     }
