@@ -62,7 +62,7 @@ body {
     font-family: "Poppins";
     color: #508C9B;
     font-size: 28px;
-    min-width: 600px;
+    min-width: 100px;
 }
 
 #silent_text ._inside {
