@@ -6,7 +6,7 @@
 
 body {
     background: #16143a;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #head {
@@ -22,7 +22,12 @@ body {
     z-index: 999;
 }
 
-.links a {
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links a, button {
     margin-left: 35px;
     color: aliceblue;
     text-decoration: none;
@@ -32,9 +37,16 @@ body {
     font-family: "Poppins";
 }
 
+.links button {
+    background: none;
+    border: none;
+}
+
 .links a:hover,
+.links button:hover,
 .links a.active {
     color: #508C9B;
+    cursor: pointer;
 }
 
 .main {
@@ -46,7 +58,7 @@ body {
 }
 
 .home {
-    height: calc(100vh - 60px); /* Adjust height considering header height */
+    height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -55,14 +67,16 @@ body {
 }
 
 .home-content {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
 }
 
 .home-content h3 {
     font-family: "Poppins";
     color: #508C9B;
     font-size: 28px;
-    min-width: 100px;
+    width: 100%;
 }
 
 #silent_text ._inside {
@@ -95,38 +109,66 @@ body {
 }
 
 .logo {
-    width: auto;
+    width: 100%;
+    max-width: 300px;
     z-index: 100;
-    transform: scale(0.5);
+    transform: scale(1);
 }
 
 .logo-container {
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 1300px) {
+    .home {
+        flex-direction: row;
+    }
+    .home-content {
+        width: 50%;
+        text-align: left;
+    }
+    .logo-container {
+        width: 50%;
+        justify-content: flex-end;
+        padding-top: 0;
+    }
+    .logo {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1299px) {
     body {
-        overflow: scroll;
+        overflow-x: hidden;
     }
     .home {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         height: auto;
-        margin-top: 300px; 
+        padding-top: 100px; 
     }
     .home-content {
-        width: 100%;
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
     }
     .logo-container {
-        justify-content: center;
-        width: 30%;
-        height: 30%;
-        padding: 0;
-        margin: 0;
+        width: 100%;
+        padding-top: 20px;
     }
     .logo {
-        transform: scale(0.5);
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    #head {
+        justify-content: center;
     }
 }
