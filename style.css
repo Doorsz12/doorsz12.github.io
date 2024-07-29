@@ -117,9 +117,29 @@ body {
 
 .logo-container {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 100%;
     padding-top: 20px;
+}
+
+.main_web_idk {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: "Poppins";
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio_ig {
+    color: #f0f8ff;
+}
+
+.portfolio_tekst_h3 {
+    max-width: 50%;
+    text-align: center;
+    color: #508C9B;
 }
 
 @media only screen and (min-width: 1300px) {
@@ -132,7 +152,7 @@ body {
     }
     .logo-container {
         width: 50%;
-        justify-content: flex-end;
+        justify-content: center;
         padding-top: 0;
     }
     .logo {
@@ -164,11 +184,15 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .links {
+#more {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .get_disabled {
         display: none;
     }
-    #head {
-        justify-content: center;
+    #more {
+        display: flex;
     }
 }

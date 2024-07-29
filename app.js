@@ -8,7 +8,7 @@ const Animate = () => {
         text.textContent = "Pianista";
     }, 4000);
     setTimeout(() => {
-        text.textContent = "Idiota";
+        text.textContent = "Marzyciel";
     }, 8000);
     setTimeout(() => {
         text.textContent = "Dopszu";
