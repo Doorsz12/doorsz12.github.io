@@ -1,4 +1,5 @@
 const text = document.querySelector("._inside");
+const about = document.getElementById("abt");
 
 const Animate = () => {
     setTimeout(() => {
@@ -16,3 +17,7 @@ const Animate = () => {
 }
 Animate();
 setInterval(Animate, 16000);
+
+about.addEventListener('click', function() {
+    document.getElementById("tep1").scrollIntoView({behavior: "smooth"});
+});

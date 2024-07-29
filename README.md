@@ -1,2 +1,2 @@
 # doorsz12.github.io
-idk
+Yeah its a portfolio kinda lame

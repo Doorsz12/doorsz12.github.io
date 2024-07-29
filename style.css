@@ -192,6 +192,12 @@ body {
     .home {
         overflow: hidden;
     }
+    #silent_text ._inside {
+        font-size: 30px;
+    }
+    .home-content {
+        margin: none;
+    }
     .get_disabled {
         display: none;
     }
