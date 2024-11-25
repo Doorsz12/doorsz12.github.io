@@ -27,6 +27,7 @@ let zmienna = 0;
 btn1.onclick = () => {
     if(zmienna == 0 || zmienna == 2 || zmienna == 4) {
         zmienna++;
+        alert("nigga");
     }
     else if(zmienna == 5) {
         zmienna = 0;
